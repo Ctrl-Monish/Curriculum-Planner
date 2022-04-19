@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1890625" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/aprbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/augbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btn34.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btn45.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btn56.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btn_month.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btnage.xml" value="0.199609375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btnageunselected.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/btnweek.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/decbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/febbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/ic_janbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/jan.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/janbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/julbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/junbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/langbtn.xml" value="0.18984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/marbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/maybtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/menupopup.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/month_selected.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/monthselect.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/novbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/octbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/rightline.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/selectage.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/selectmonth.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/selectsidebtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/sepbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/sidebtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_34.xml" value="0.15548029556650247" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_45.xml" value="0.15548029556650247" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_56.xml" value="0.15548029556650247" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/popuplang_layout.xml" value="0.271875" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_day.xml" value="0.25769704433497537" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_side.xml" value="0.25769704433497537" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_top.xml" value="0.25769704433497537" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/menu/langpopup.xml" value="0.271875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

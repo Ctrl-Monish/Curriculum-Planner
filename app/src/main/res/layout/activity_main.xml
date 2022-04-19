@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tab_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apr_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/aprbtn"
+            android:fontFamily="@font/myfont"
+            android:text="APR"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/may_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/maybtn"
+            android:fontFamily="@font/myfont"
+            android:text="MAY"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/jun_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/junbtn"
+            android:fontFamily="@font/myfont"
+            android:text="JUN"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/jul_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/julbtn"
+            android:fontFamily="@font/myfont"
+            android:text="JUL"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/aug_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/augbtn"
+            android:fontFamily="@font/myfont"
+            android:text="AUG"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sep_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/sepbtn"
+            android:fontFamily="@font/myfont"
+            android:text="SEP"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oct_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/octbtn"
+            android:fontFamily="@font/myfont"
+            android:text="OCT"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nov_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/novbtn"
+            android:fontFamily="@font/myfont"
+            android:text="NOV"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dec_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/decbtn"
+            android:fontFamily="@font/myfont"
+            android:text="DEC"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/jan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/janbtn"
+            android:fontFamily="@font/myfont"
+            android:text="JAN"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/febbtn"
+            android:fontFamily="@font/myfont"
+            android:text="FEB"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/marbtn"
+            android:fontFamily="@font/myfont"
+            android:text="MAR"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_month">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_week1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:text="WEEK 1"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_week2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:text="WEEK 2"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_week3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:text="WEEK 3"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_week4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:text="WEEK 4"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_week5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:text="WEEK 5"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/hometext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/myfont"
+        android:text="Hello world"
+        android:textColor="@color/txtclr"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/tab_month">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/tab_month"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_month">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 1" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 2" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 3" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 4" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 5" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day6"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 6" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/id_day7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sidebtn"
+                android:fontFamily="@font/myfont"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+                android:text="DAY 7" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:background="@color/bottom_barclr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/age34"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnage"
+                android:fontFamily="@font/myfont"
+                android:text="3-4 YEARS"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/age45"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnage"
+                android:fontFamily="@font/myfont"
+                android:text="4-5 YEARS"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/age56"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnage"
+                android:fontFamily="@font/myfont"
+                android:text="5-6 YEARS"
+                android:textColor="@color/txtclr"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ln"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/langbtn"
+            android:fontFamily="@font/myfont"
+            android:text="LN"
+
+            android:textColor="@color/txtclr"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
