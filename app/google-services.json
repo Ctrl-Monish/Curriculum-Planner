@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "935988358029",
+    "project_id": "curriculumbv-655c9",
+    "storage_bucket": "curriculumbv-655c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935988358029:android:209f2da0ebf69f42d12bc4",
+        "android_client_info": {
+          "package_name": "com.iitd.Planner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935988358029-brrkk8qae4tcgcp26pd2unag5boih1gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJLhRHWvxYAVweeTvEpa4-QCKPcV9bivI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935988358029-brrkk8qae4tcgcp26pd2unag5boih1gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935988358029:android:fd46b0ca03be222cd12bc4",
+        "android_client_info": {
+          "package_name": "com.iitd.adminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935988358029-brrkk8qae4tcgcp26pd2unag5boih1gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJLhRHWvxYAVweeTvEpa4-QCKPcV9bivI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935988358029-brrkk8qae4tcgcp26pd2unag5boih1gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

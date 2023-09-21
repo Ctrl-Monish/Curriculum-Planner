@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="April/ Week 1/ Day 1/ Year 1"
+            android:textSize="20sp"
+            android:textAlignment="center">
+        </TextView>
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A is a Healthy Apple"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center">
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration: 1 hour"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resources Required: AR Markers, AR App, You tube video "
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textAlignment="center">
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions: Tell the story interactively and conduct activities related to the story  "
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There was a small boy who did not like apples. How many of you have seen an apple ? What colour is it ? It is red colour (teacher shows an apple. Do you like apples ? But this small boy called Rohan did not like apples. So his mother used to tell her that apples are good for health. They make you strong. But Rohan did not like to eat apples. In fact he did not like to eat much. He did not eat at the food time. How many of you eat your food on time ? How many of you quickly finish your food? How many of you chew it well ? But Rohan did not chew well ? Neither eat properly. He will waste food ? What food did you have today ? But Rohan did not like to eat his food on time. His mother was worried. Does your mother get worried when you do not eat ? What does she do ? So Rohan’s Mother was worried. She thought of a trick. Do you know what was that trick ? She remembered that Rohan was scared of doctors. Are you also scared of doctors ? Why do people have to go to doctors ? So Rohan was scared of doctors and his mother wanted to tell Rohan to eat apples so that he could avoid the doctors. Hence she created a rhyme. Do you what that rhyme was ? It was
+
+An apple a day keeps the doctor away.
+
+Apple in the morning, doctor's warning.
+
+Roast apple at night, starves the doctor outright.
+
+Eat an apple going to bed, knock the doctor on the head. "
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity 1: The teachers sings the song and kids repeat after the teachers.\nActivity 2: Play the rhyme from https://www.youtube.com/watch?v=EOkif_tTGtk. And kids sing along \nActivity 3: Ask the kids to find apple in the deck of cards. Kids use the AR app to see what happens when they take the tablet above the card. OR Kids take the app over the chart pasted on the wall and search for apple in it. Whoever finds is the winner. \nActivity 4: Introduce to children the sound of A. Tell the kids that word apple starts with ‘A’.  Ask kids to write letter ‘A’.\nActivity 5: Search for a child in class whose name starts with A, or has A in it. Call the child in front and ask them to spell their name. Provide help. \nActivity 6: Ask children to draw apple. Then ask them to count how many apples have been drawn in class. \nActivity 7: Ask children to stand in a line and hold the AR cards in their hands to spell APPLE. Or place the cards which make APPLE on the floor and ask children o move the AR app above it. \nActivity 8: Ask children- What is an apple ? It is a fruit ?  Tell them it is a fruit and then ask them to look for a fruits in the chart (or the card deck). There are four in the chart (Apple, Orange, Grapes, Watermelon, Mango). Teacher can expand the learning as per the child’s preparation to identify the alphabets that each fruit starts with."
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Learnings: Sound of A, Habit of eating well, Fruits, Identification of letter, Identification of colour. "
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assessment: Observe whether the child shares in the class. Does the child hold the tablet well ? Move swiftly to the charts ? Does pronounce the sound of A and Apple properly. Notice what does the child share about the eating habits at home ? What does the child share about how his her mother convinces hm/her to eat. Report if the child has knowledge of alphabets."
+            android:textSize="20sp"
+            android:background="@color/bottom_barclr">
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>

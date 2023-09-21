@@ -1,3 +1,115 @@
 <resources>
-    <string name="app_name">Curriculum Planner</string>
+    <string name="app_name">Class Plan App</string>
+    <string name="selected_language">English</string>
+
+    //DAY1
+    <string name="head1">A is a Healthy Apple</string>
+    <string name="duration1">Duration: 1 hour</string>
+    <string name="res1">Resources Required: AR Markers, AR App, You tube video</string>
+    <string name="inst1">Instructions: Tell the story interactively and conduct activities related to the story</string>
+    <string name="cont1">There was a small boy who did not like apples.\n How many of you have seen an apple ? \n What colour is it ?\n It is red colour (teacher shows an apple. Do you like apples ? But this small boy called Rohan did not like apples. So his mother used to tell her that apples are good for health. They make you strong. But Rohan did not like to eat apples. In fact he did not like to eat much. He did not eat at the food time.\n How many of you eat your food on time ?\n How many of you quickly finish your food?\n How many of you chew it well ?\n But Rohan did not chew well, neither eat properly. He will waste food.\n What food did you have today ?\n But Rohan did not like to eat his food on time. His mother was worried. Does your mother get worried when you do not eat ?\n What does she do ? So Rohan’s Mother was worried. She thought of a trick. Do you know what was that trick ? She remembered that Rohan was scared of doctors. Are you also scared of doctors ? Why do people have to go to doctors ? So Rohan was scared of doctors and his mother wanted to tell Rohan to eat apples so that he could avoid the doctors. Hence she created a rhyme. Do you what that rhyme was ?\n
+It was\n
+
+                                                                        An apple a day keeps the doctor away. \n
+
+                                                                        Apple in the morning, doctor\'s warning. \n
+
+                                                                  Roast apple at night, starves the doctor outright. \n
+
+                                                                Eat an apple going to bed, knock the doctor on the head.
+</string>
+    <string name="activity1">Activity 1: The teachers sings the song and kids repeat after the teachers.\nActivity 2: Play the rhyme from https://www.youtube.com/watch?v=EOkif_tTGtk. And kids sing along \nActivity 3: Ask the kids to find apple in the deck of cards. Kids use the AR app to see what happens when they take the tablet above the card. OR Kids take the app over the chart pasted on the wall and search for apple in it. Whoever finds is the winner. \nActivity 4: Introduce to children the sound of A. Tell the kids that word apple starts with ‘A’.  Ask kids to write letter ‘A’.\nActivity 5: Search for a child in class whose name starts with A, or has A in it. Call the child in front and ask them to spell their name. Provide help. \nActivity 6: Ask children to draw apple. Then ask them to count how many apples have been drawn in class. \nActivity 7: Ask children to stand in a line and hold the AR cards in their hands to spell APPLE. Or place the cards which make APPLE on the floor and ask children o move the AR app above it. \nActivity 8: Ask children- What is an apple ? It is a fruit ?  Tell them it is a fruit and then ask them to look for a fruits in the chart (or the card deck). There are four in the chart (Apple, Orange, Grapes, Watermelon, Mango). Teacher can expand the learning as per the child’s preparation to identify the alphabets that each fruit starts with.</string>
+    <string name="klg1">Key Learnings: Sound of A, Habit of eating well, Fruits, Identification of letter, Identification of colour.</string>
+    <string name="asses1">Assessment: Observe whether the child shares in the class. Does the child hold the tablet well ? Move swiftly to the charts ? Does pronounce the sound of A and Apple properly. Notice what does the child share about the eating habits at home ? What does the child share about how his her mother convinces hm/her to eat. Report if the child has knowledge of alphabets.</string>
+
+
+    //DAY2
+    <string name="head2">D is Dog care</string>
+    <string name="duration2">Duration: 1 hour </string>
+    <string name="res2">Resources Required: AR Markers, AR App, You tube video</string>
+    <string name="inst2">Instructions: Tell the story interactively and conduct activities related to the story</string>
+    <string name="cont2">There was a small girl who did not like dogs. She used to throw stones at them. Once a dog puppy got hurt by the stone. The puppy started crying. Have you ever hurt any dog ? Have you heard a puppy weeping ? How do they weep ? And how do they sound when they are happy ? How do they bark at others? How many of you have seen a dog ? Which colour was it ? Do you like dogs ? Are they dangerous ? How can you be careful about it ? Do not go near an unknown dog. But generally dogs are good friends of human beings. How many of you have a pet ?  But this small girl called Brahmi did not have a pet and she did not like dogs or puppies. And she threw a stone at the dog and the dog puppy got hurt. The puppy got scared and went and hid under a tree. There was another boy named Roshan whose father was a Veterinary doctor. Do you know what are Veterinary doctors ? They look after animals. So Roshan’s father was a Veterinary doctor and he used to treat dogs. Roshan saw that the dog was hurt. He took the dog in his arms and took to his father. Do you think that he did the right thing ? Why ? Why not ? Roshan’s father saw that the dog was bleeding. Blood was coming out of the puppy’s legs. Have seen blood ? Where ? What colour is it ? When does the blood come out of our skins ? When the skin is torn due to an impact. When we are hurt. And what do we do when blood starts coming out ? We need to clean it and put a bandage. So the doctor cleaned the wound and applied a bandage on the dog puppy. The dog was very happy and it thanked Roshan.
+</string>
+    <string name="activity2">Activity 1: Role play. One kid becomes a dog. Another a doctor. One person becomes Roshan and another Brahmi. Brahmi acts to throw a stone. The dog cries. Roshan rushes and takes the dog to the doctor. The doctor cleans the wound and places a bandage. Doctor gives an injection and a pill to the dog.  \n
+
+Activity 2: Ask children- What is an DOG ? It is an animal ?  Tell them it is a animal and then ask them to look for animals in the chart (or the card deck). There are four animals in the chart (Cat, Dog, Elephant, fish, horse, lion, parrot, rabbit, tiger, Zebra). Discuss types of animals, wild, domestic, friendly, dangerous, animals you can find in the zoo, small animals, big animals, herbivorous animals, carnivorous animals etc. Teacher can expand the learning as per the child’s preparation to identify the alphabets that each animal starts with. \n
+
+Activity 3: Ask the kids to find a dog in the deck of cards. Kids use the AR app to see what happens when they take the tablet above the card. OR Kids take the app over the chart pasted on the wall and search for dog in it. Whoever finds it is the winner. Ask kids ‘how many legs does a dog have ? Rotate and count in the AR model. How does the dog sound when it is happy when you give food to it ? When you hurt it ?  \n
+
+Activity 4: Introduce to children the sound of D. Tell the kids that word dog starts with ‘D’.  Ask kids to write letter ‘D’.  \n
+
+Activity 5: Search for a child in class whose name starts with D, or has D in it. Call the child in front and ask them to spell their name. Provide help.  \n
+
+Activity 6: Ask children to come in the front and tell a story about a dog in their neighbourhood.   \n
+
+Activity 7: Ask children to stand in a line and hold the AR cards in their hands to spell DOG. Or place the cards which make DOG on the floor and ask children to move the AR app above it.  </string>
+    <string name="klg2">Key Learnings: Care for animals, empathy about others feelings, Introduction to D alphabet. Understanding of what to do when one gets hurt.  </string>
+    <string name="asses2">Assessment: Observe whether the child shares in the class. Does the child hold the tablet well ? Move swiftly to the charts ? Does pronounce the sound of D and Dog properly. Notice what does the child share about animals ? Does the child show happy emotions? Any trauma ? Report if the child has knowledge of alphabets.</string>
+
+
+    //DAY 3
+    <string name="head3">H the sharing Horse  </string>
+    <string name="duration3">Duration: 1 hour</string>
+    <string name="res3">Resources Required: AR Markers, AR App</string>
+    <string name="inst3">Instructions: Tell the story interactively and conduct activities related to the story</string>
+    <string name="cont3">Once upon a time, there lived a washerman in a village. He had a horse and a donkey. He would use the donkey to carry the load of clothes from the village to the river and back, whereas he would use the horse for himself to go wherever he wanted.\n
+
+One day, the washerman loaded his donkey with heavy bundles of clothes, while the horse carried nothing. The load was too much for the donkey to carry. When they were halfway through to the river, the donkey got very tired. So, he decided to ask for help from the horse. He requested the horse “Friend, this load is killing me. Will you please help me? Can you share some of my load?”.\n
+
+“Why should I? Horses are meant for riding and you donkeys are meant for carrying heavy loads” replied the horse. Poor donkey continued walking with the heavy load. But, after some time the donkey got too tired that he collapsed on the ground. Then, the washerman realized his mistake. He gave water to the donkey and transferred the entire load onto the horse\'s back.\n
+
+After getting some rest, they started walking towards the river again. As they started to walk the horse realized his mistake and thought to himself “This is so heavy. I should have helped the donkey when he requested me and shared half of the load. Now I will have to carry the entire load to the river. From now on, I will always share the load”.\n
+
+The horse and donkey became best friends and started sharing their work.
+</string>
+    <string name="activity3">Activity 1: Role play. One kid becomes a horse. Another a donkey. Both of them carry a token weight (paper, towel, book.. ) The donkey has more weight. The donkey says please share. The horse shares and both are happy.  \n
+
+Activity 2: Give two toffees to one child at a time and ask them to choose whom do they want to share it with. Ask the child who receives to say thank you. Ask the child to share how did they feel when they received a toffee.   \n
+
+Activity 3: Ask the kids to find horse in the deck of cards. Kids use the AR app to see what happens when they take the tablet above the card. OR Kids take the app over the chart pasted on the wall and search for dog in it. Whoever finds is the winner.  \n
+
+Activity 4: Introduce to children the sound of H. Tell the kids that word Horse starts with ‘H’.  Ask kids to write letter ‘H’. \n
+
+Activity 5: Search for a child in class whose name starts with H, or has H in it. Call the child in front and ask them to spell their name. Provide help.  \n
+
+Activity 6:  Invite children one by one to share any instance that they shared something with anybody in family or outside.  \n
+
+Activity 7: Ask children to stand in a line and hold the AR cards in their hands to spell DOG. Or place the cards which make HORSE on the floor and ask children to move the AR app above it. Ask them to count the number of legs the horse has.  \n
+
+Activity 8: Ask children- What is a Horse ? Is an animal or a bird ?  Tell them it is an animal and then ask them to look for animals in the chart (or the card deck). There are ten animals in the chart (Cat, Dog, Elephant, fish, horse, lion, parrot, rabbit, tiger, Zebra). Discuss types of animals, wild, domestic, friendly, dangerous, animals you can find in the zoo, small animals, big animals, herbivorous animals, carnivorous animals etc. Teacher can expand the learning as per the child’s preparation to identify the alphabets that each animal starts with. </string>
+    <string name="klg3">Key Learnings: Sharing with others, Alphabet H,  </string>
+    <string name="asses3">Assessment: Observe whether the child shares in the class. Does the child hold the tablet well ? Move swiftly to the charts ? Does pronounce the sound of H and Horse properly. Notice what does the child share about sharing in family and others ? Does the child show happy emotions while sharing ? Report if the child has knowledge of alphabets.</string>
+
+
+    /DAY 4
+    <string name="head4">I and Ice Cream </string>
+    <string name="duration4">Duration: 1 hour</string>
+    <string name="res4">Resources required : AR Fruit cards, AR QR sheets. </string>
+    <string name="inst4">Instructions: Engage the children in storytelling and make them relate it to their experiences.  </string>
+    <string name="cont4">A girl named Riya came to Delhi to visit her Aunt during her summer vacations. Riya was amazed to see Ice Cream vendors all around her. She has not seen Ice cream vendors in her village. Teacher shows Ice cream and asks questions like : How many of you like Ice Cream? \n
+
+Have you seen ice cream vendors in your locality? How do you know that an Ice cream vendor has arrived? Riya gets to know through a bell that the vendor rings whenever he arrives in the street.  \n
+
+Now, Riya is familiar with the city life and has even made new friends here. She tells them the story of her village. The fruits they grow and eat. Riya’s village has fruits like Orange, Apple and Litchi. Riya has brought some litchis for her aunt as well. Last time her father brought oranges, when he came here in winters. Riya here is eating watermelon. They are the best in the summer, her aunt says. As days passed, Riya vacations came to an end and she will soon be returning to her village. Riya is going to her friends and Ice cream a lot. </string>
+    <string name="activity4">Activity 1:Ask children to look out for the fruits in the deck of AR cards. Let them interact and come up with their observations about them. Make children speak these names of fruits by breaking them into syllables. For e.g. O-range, Ap-ple, Li-chi. It’s not necessary for them to memorise it, just make them speak it. \n
+
+    Activity 2:Ask children about the fruits they are eating in this season. Add some fruits in their list and if possible let them see their AR fruits card deck as well. \n
+
+    Activity 3:Provide sheets with AR QR code to children, ask them to colour them and project them in their tablet. </string>
+    <string name="klg4">Key Learnings: Identification of letters, syllables related to fruits, value of adaptation, seasonal fruits knowledge. </string>
+    <string name="asses4">Assessment : Observe if the child demonstrates listening and speaking skills, shares  ideas, thoughts and personal experiences. Take note of the pre- existing knowledge that a child demonstrates through his participation.
+
+To check, the teacher can show letters to students and can ask the word that starts with that letter. </string>
+
+
+    /DAY 5
+    <string name="head5">Man-go </string>
+    <string name="duration5">Duration: 1 hour</string>
+    <string name="res5">Resources required : AR Fruit cards, AR QR sheets. </string>
+    <string name="inst5">Instructions: Engage the children in storytelling and make them relate it to their experiences.  </string>
+    <string name="cont5">It was the first day of kindergarten. Teacher took Jatin and all his classmates to the garden. They went with a plan to plant Mango sapling. Teacher invited Somya to help her to dig the hole, then Jatin put the sapling in the hole. Rohan covered the roots with loose soil and Swati soaked the roots with water. After this, once a week one among of them watered the roots. After three years in class one, their teacher took them to the mango tree. A fully grown tree with mangoes hanging on it. Some were green and some yellow. Teacher asked \'Bholuji\' to pluck some green and yellow mango from tree. (Teacher here can show the AR mango model to children and can ask questions like Have you seen a mango tree? Do you know how does mango tastes? Then she can introduce the term sour and sweet to children. Relate these tastes to green and yellow colour respectively.\n
+After plucking the mangoes, teacher asked the children to sort the green and yellow mangoes in two separate groups. (Now ask the children to do the same with their AR mangoes). After this teacher asked Jatin and Swati to distribute the mangoes to all the students. Every child was given a pair of green and yellow mango. (Involve the children in distributing the mangoes in 2s. Teacher can extend this activity for 5s and 10s concept as well. </string>
+    <string name="activity5">Activity:</string>
+    <string name="klg5">Key Learnings: Syllable in Mango, Learning to grow a plant, Connection with nature, concept of numbers, sorting and grouping in 2s,5s,10s, Identification of colour.  </string>
+    <string name="asses5">Assessment: Observe whether the child shares in the class. Does the child hold the tablet well ? Move swiftly to the charts ? Does pronounce the sound of A and Apple properly. Notice what does the child share about the eating habits at home ? What does the child share about how his her mother convinces hm/her to eat. Note: if the child was able to identify the colour, sort out the fruit on the basis of colour, group them in 2s,5s,10s. </string>
 </resources>

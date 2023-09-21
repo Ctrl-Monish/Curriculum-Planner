@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+>
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_margin="20dp"-->
+<!--    android:background="#C3D9ED"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Note: Please enter date in the given format only. "-->
+<!--        android:padding="5dp"-->
+<!--        android:textSize="20dp"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Year: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/year_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="1/2/3"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Month: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/month_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="01/02.../12"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Week: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/week_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="1/2/3/4/5"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Day: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/day_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="1/2/.../7"-->
+<!--            android:textSize="20dp"/>-->
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_margin="20dp"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#FFE9EC"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Heading: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/heading_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the heading"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Duration: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/dur_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the duration"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Resources: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/res_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the resources"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Instructions: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/inst_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the instructions"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Content: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/cont_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the content"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Activity: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/act_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the activities"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Key Learnings: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/klg_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the learnings"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Assessments: "-->
+<!--            android:padding="5dp"-->
+<!--            android:textSize="20dp"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/ass_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter the assessment"-->
+<!--            android:textSize="20dp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+</LinearLayout>

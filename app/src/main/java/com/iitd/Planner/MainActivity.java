@@ -1,8 +1,12 @@
 package com.iitd.Planner;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,22 +18,41 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    FirebaseDatabase firebaseDatabase;
+
+    DatabaseReference databaseReference;
+
 
     Button[] bmonth = new Button[12];
     Button[] bage = new Button[3];
     Button[] bweek = new Button[5];
     Button[] bday = new Button[7];
 
+    String id;
+
     int age = 0;
     int month = 0;
     int week = 0;
     int day = 0;
-    TextView tv;
+    TextView conttv, headtv, durtv, restv, klgtv, insttv, acttv, asstv;
     Button language;
+    Button appChange;
     ContentToDisplay cont;
 
     TextView bengali,english,hindi,kannada,marathi,gujrati;
+    Context context;
+    Resources resources;
+    String lang = "english";
 
 
     @Override
@@ -39,15 +62,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         language = findViewById(R.id.btn_ln);
 
-        language.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showFilterPopup(v);
-            }
-        });
-        tv = findViewById(R.id.hometext);
+        language.setOnClickListener(this::showFilterPopup);
         cont = new ContentToDisplay(age,month,week,day);
-        tv.setText("Welcome");
+
+        headtv = findViewById(R.id.head_tv);
+        durtv = findViewById(R.id.dur_tv);
+        restv = findViewById(R.id.res_tv);
+        insttv = findViewById(R.id.inst_tv);
+        conttv = findViewById(R.id.cont_tv);
+        acttv = findViewById(R.id.act_tv);
+        klgtv = findViewById(R.id.klg_tv);
+        asstv = findViewById(R.id.ass_tv);
+
+        appChange = findViewById(R.id.gotoapp);
+        appChange.setOnClickListener(this);
+        appChange.setVisibility(View.GONE);
 
         bmonth[0] = findViewById(R.id.apr_btn);
         bmonth[1] = findViewById(R.id.may_btn);
@@ -92,10 +121,65 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btn.setOnClickListener(this);
         }
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference();
+        onAppStart();
+    }
 
+    private void onAppStart(){
+        content_id = "10111";
+        selectAge(bage[0]);
+        selectMonth(bmonth[0]);
+        selectWeek(bweek[0]);
+        selectDay(bday[0]);
+        getdata();
+    }
 
-
-
+    private void getdata() {
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()){
+                    HashMap<String, Object> dataMap = (HashMap<String, Object>) dataSnapshot.getValue();
+                        Object data = dataMap.get(content_id);
+                        System.out.println(content_id);
+                        try{
+                            HashMap<String, Object> userData = (HashMap<String, Object>) data;
+                            ContentBean cBean = new ContentBean(
+                                    (String) userData.get("heading"),
+                                    (String) userData.get("duration"),
+                                    (String) userData.get("resources"),
+                                    (String) userData.get("instructions"),
+                                    (String) userData.get("content"),
+                                    (String) userData.get("activity"),
+                                    (String) userData.get("klg"),
+                                    (String) userData.get("assessment"));
+                            headtv.setText(cBean.getHeading());
+                            durtv.setText(cBean.getDuration());
+                            restv.setText(cBean.getResources());
+                            insttv.setText(cBean.getInstructions());
+                            conttv.setText(cBean.getContent());
+                            klgtv.setText(cBean.getKlg());
+                            asstv.setText(cBean.getAssessment());
+                            acttv.setText(cBean.getActivity());
+                            Toast.makeText(getApplicationContext(), "done", Toast.LENGTH_SHORT).show();
+                            System.out.println("head: " + cBean.getHeading() + "\n ass: " + cBean.getAssessment() + "cont: " + cBean.getContent() + "\n dur: " + cBean.getDuration());
+                        }catch (NullPointerException cce){
+                            headtv.setText("Null");
+                            durtv.setText("Null");
+                            restv.setText("Null");
+                            insttv.setText("Null");
+                            conttv.setText("Null");
+                            klgtv.setText("Null");
+                            asstv.setText("Null");
+                            acttv.setText("Null");
+                        }
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
     }
 
     private void showFilterPopup(View v) {
@@ -136,6 +220,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wm.updateViewLayout(container, p);
     }
 
+    String content_id;
     @Override
     public void onClick(View v) {
             selectMonth(v);
@@ -143,7 +228,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             selectWeek(v);
             selectDay(v);
             selectLanguage(v);
-            //tv.setText(cont.printContent());
+            openUnity(v);
+            content_id = Integer.toString(age) + "0" + Integer.toString(month) + Integer.toString(week) + Integer.toString(day);
+                getdata();
+    }
+    
+    String appToOpen = "null";
+    public void openUnity(View v){
+        if(v.getId() == R.id.gotoapp){
+            String packageName;
+            String className = "com.google.android.youtube.app.honeycomb.Shell$HomeActivity";
+            switch (appToOpen){
+                case "alphabets":
+                    packageName = "com.DivineLab.Alphabet";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                case "face":
+                    packageName = "com.iitdelhi.facear";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                case "silhouette":
+                    packageName = "com.AryanJumani.SilhouetteApp";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                case "sticks":
+                    packageName = "com.AryanJumani.SticksApp";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                case "portal":
+                    packageName = "com.DefaultCompany.ARPortalDemo";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                case "balloon":
+                    packageName = "com.MyCompany.arshooter";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                case "human":
+                    packageName = "com.AryanJumani.humanBody";
+                    className = "com.unity3d.player.UnityPlayerActivity";
+                    break;
+                default:
+                    packageName = "com.google.android.youtube";
+            }
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_LAUNCHER);
+            intent.setPackage(packageName);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setClassName(packageName, className);
+            startActivity(intent);
+        }
     }
 
     public void selectLanguage(View v){
@@ -152,13 +285,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, "Bengali Selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.id_english:
-                Toast.makeText(this, "English Selected", Toast.LENGTH_SHORT).show();
+                lang = "en";
                 break;
             case R.id.id_gujrati:
                 Toast.makeText(this, "Gujrati Selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.id_hindi:
-                Toast.makeText(this, "Hindi Selected", Toast.LENGTH_SHORT).show();
+                lang = "hi";
                 break;
             case R.id.id_kannada:
                 Toast.makeText(this, "Kannada Selected", Toast.LENGTH_SHORT).show();
@@ -174,7 +307,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 age = 1;
                 cont.setAge(age);
                 changeAgeBtnClr();
-                tv.setText("1st Year Overview");
                 changeMonthBtnClr();
                 changeWeekBtnClr();
                 v.setBackgroundResource(R.drawable.selectage);
@@ -184,7 +316,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 age = 2;
                 cont.setAge(age);
                 changeAgeBtnClr();
-                tv.setText("2nd Year Overview");
                 changeMonthBtnClr();
                 changeWeekBtnClr();
 
@@ -195,10 +326,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 age = 3;
                 cont.setAge(age);
                 changeAgeBtnClr();
-                tv.setText("3rd Year Overview");
                 changeMonthBtnClr();
                 changeWeekBtnClr();
-
                 v.setBackgroundResource(R.drawable.selectage);
                 break;
         }
@@ -211,7 +340,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 month = 10 ;
                 cont.setMonth(month);
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -220,8 +348,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"February", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -230,8 +356,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"March", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -240,8 +364,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"April", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -250,8 +372,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"May", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -260,8 +380,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"June", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -270,7 +388,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"July", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
+                conttv.setText(cont.monthContent());
 
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
@@ -280,8 +398,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"August", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -290,8 +406,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"September", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -300,8 +414,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"October", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -310,8 +422,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"November", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
 
@@ -320,8 +430,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cont.setMonth(month);
                 Toast.makeText(this,"December", Toast.LENGTH_SHORT).show();
                 changeMonthBtnClr();
-                tv.setText(cont.monthContent());
-
                 v.setBackgroundResource(R.drawable.selectmonth);
                 break;
         }
@@ -332,8 +440,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 week = 1;
                 cont.setWeek(week);
                 changeWeekBtnClr();
-                tv.setText(cont.weekContent());
-
                 v.setBackgroundResource(R.drawable.selectsidebtn);
                 break;
 
@@ -341,8 +447,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 week = 2;
                 cont.setWeek(week);
                 changeWeekBtnClr();
-                tv.setText(cont.weekContent());
-
                 v.setBackgroundResource(R.drawable.selectsidebtn);
                 break;
 
@@ -350,28 +454,124 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 week = 3;
                 cont.setWeek(week);
                 changeWeekBtnClr();
-                tv.setText(cont.weekContent());
-
                 v.setBackgroundResource(R.drawable.selectsidebtn);
                 break;
             case R.id.id_week4:
                 week = 4;
                 cont.setWeek(week);
                 changeWeekBtnClr();
-                tv.setText(cont.weekContent());
-
                 v.setBackgroundResource(R.drawable.selectsidebtn);
                 break;
             case R.id.id_week5:
                 week = 5;
                 cont.setWeek(week);
                 changeWeekBtnClr();
-                tv.setText(cont.weekContent());
-
                 v.setBackgroundResource(R.drawable.selectsidebtn);
                 break;
         }
     }
+//    public void aprilContent(){
+//            if(age == 1 && month == 1 && week == 4){
+//                appChange.setVisibility(View.VISIBLE);
+//                switch (day){
+//                    case 2:
+//                        if(lang.equals("hi")){
+//                            context = LocaleHelper.setLocale(MainActivity.this, "hi");
+//                        }else{
+//                            context = LocaleHelper.setLocale(MainActivity.this, "en");
+//                        }
+//                        resources = context.getResources();
+//                        headtv.setText(resources.getString(R.string.head2));
+//                        durtv.setText(resources.getString(R.string.duration2));
+//                        restv.setText(resources.getString(R.string.res2));
+//                        insttv.setText(resources.getString(R.string.inst2));
+//                        conttv.setText(resources.getString(R.string.cont2));
+//                        klgtv.setText(resources.getString(R.string.klg2));
+//                        asstv.setText(resources.getString(R.string.asses2));
+//                        acttv.setText(resources.getString(R.string.activity2));
+//                        appToOpen = "alphabets";
+//                        break;
+//                    case 1:
+//                        if(lang.equals("hi")){
+//                            context = LocaleHelper.setLocale(MainActivity.this, "hi");
+//                        }else{
+//                            context = LocaleHelper.setLocale(MainActivity.this, "en");
+//                        }
+//                        resources = context.getResources();
+//                        headtv.setText(resources.getString(R.string.head1));
+//                        durtv.setText(resources.getString(R.string.duration1));
+//                        restv.setText(resources.getString(R.string.res1));
+//                        insttv.setText(resources.getString(R.string.inst1));
+//                        conttv.setText(resources.getString(R.string.cont1));
+//                        klgtv.setText(resources.getString(R.string.klg1));
+//                        asstv.setText(resources.getString(R.string.asses1));
+//                        acttv.setText(resources.getString(R.string.activity1));
+//                        appToOpen = "alphabets";
+//                        break;
+//                    case 3:
+//                        if(lang.equals("hi")){
+//                            context = LocaleHelper.setLocale(MainActivity.this, "hi");
+//                        }else{
+//                            context = LocaleHelper.setLocale(MainActivity.this, "en");
+//                        }
+//                        resources = context.getResources();
+//                        headtv.setText(resources.getString(R.string.head3));
+//                        durtv.setText(resources.getString(R.string.duration3));
+//                        restv.setText(resources.getString(R.string.res3));
+//                        insttv.setText(resources.getString(R.string.inst3));
+//                        conttv.setText(resources.getString(R.string.cont3));
+//                        klgtv.setText(resources.getString(R.string.klg3));
+//                        asstv.setText(resources.getString(R.string.asses3));
+//                        acttv.setText(resources.getString(R.string.activity3));
+//                        appToOpen = "alphabets";
+//                        break;
+//                    case 4:
+//                        if(lang.equals("hi")){
+//                            context = LocaleHelper.setLocale(MainActivity.this, "hi");
+//                        }else{
+//                            context = LocaleHelper.setLocale(MainActivity.this, "en");
+//                        }
+//                        resources = context.getResources();
+//                        headtv.setText(resources.getString(R.string.head4));
+//                        durtv.setText(resources.getString(R.string.duration4));
+//                        restv.setText(resources.getString(R.string.res4));
+//                        insttv.setText(resources.getString(R.string.inst4));
+//                        conttv.setText(resources.getString(R.string.cont4));
+//                        klgtv.setText(resources.getString(R.string.klg4));
+//                        asstv.setText(resources.getString(R.string.asses4));
+//                        acttv.setText(resources.getString(R.string.activity4));
+//                        appToOpen = "alphabets";
+//                        break;
+//                    case 5:
+//                        if(lang.equals("hi")){
+//                            context = LocaleHelper.setLocale(MainActivity.this, "hi");
+//                        }else{
+//                            context = LocaleHelper.setLocale(MainActivity.this, "en");
+//                        }
+//                        resources = context.getResources();
+//                        headtv.setText(resources.getString(R.string.head5));
+//                        durtv.setText(resources.getString(R.string.duration5));
+//                        restv.setText(resources.getString(R.string.res5));
+//                        insttv.setText(resources.getString(R.string.inst5));
+//                        conttv.setText(resources.getString(R.string.cont5));
+//                        klgtv.setText(resources.getString(R.string.klg5));
+//                        asstv.setText(resources.getString(R.string.asses5));
+//                        acttv.setText(resources.getString(R.string.activity5));
+//                        appToOpen = "alphabets";
+//                        break;
+//                    case 6:
+//                        appToOpen = "face";
+//                        break;
+//                    case 7:
+//                        appToOpen = "human";
+//                        break;
+//                }
+//                appChange.setText(appToOpen);
+//            }else{
+//                appChange.setVisibility(View.GONE);
+//
+//            }
+//    }
     public void selectDay(View v){
         switch(v.getId()) {
             case R.id.id_day1:

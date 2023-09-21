@@ -37,7 +37,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
             android:background="@drawable/maybtn"
             android:fontFamily="@font/myfont"
             android:text="MAY"
@@ -289,81 +288,90 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/head_tv"
+            <EditText
+                android:id="@+id/heading_input"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="50dp"
+                android:hint="Heading"
+                android:textSize="50sp"
                 android:textStyle="bold"
                 android:textAlignment="center">
-            </TextView>
-            <TextView
-                android:id="@+id/dur_tv"
+            </EditText>
+            <EditText
+                android:id="@+id/dur_input"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:hint="Duration"
+                android:textSize="30sp"
                 android:textAlignment="center">
 
-            </TextView>
-            <TextView
-                android:id="@+id/res_tv"
+            </EditText>
+            <EditText
+                android:id="@+id/res_input"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:hint="Resources Required"
+                android:textSize="30sp"
                 android:textStyle="italic"
                 android:textAlignment="center">
-            </TextView>
-            <TextView
-                android:id="@+id/inst_tv"
+            </EditText>
+            <EditText
+                android:id="@+id/inst_input"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Instructions"
                 android:textSize="30sp">
-            </TextView>
-            <TextView
-                android:id="@+id/cont_tv"
+            </EditText>
+            <EditText
+                android:id="@+id/cont_input"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp">
-            </TextView>
-
-            <TextView
-                android:id="@+id/act_tv"
-                android:padding="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:hint="Content"
                 android:textSize="30sp">
-            </TextView>
+            </EditText>
 
-            <TextView
-                android:id="@+id/klg_tv"
+            <EditText
+                android:id="@+id/act_input"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp">
-            </TextView>
+                android:hint="Activities"
+                android:textSize="30sp">
+            </EditText>
 
-            <TextView
-                android:id="@+id/ass_tv"
+            <EditText
+                android:id="@+id/klg_input"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Key Learnings"
+                android:textSize="30sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/ass_input"
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:hint="Assessment"
+                android:textSize="30sp"
                 android:layout_marginBottom="15dp"
                 android:background="@color/bottom_barclr">
-            </TextView>
+            </EditText>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/gotoapp"
+                android:id="@+id/upload_btn"
                 android:backgroundTint="@color/bottom_box"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@color/white"
                 android:fontFamily="@font/myfont"
+                android:text="Upload"
                 android:textColor="@color/black"
                 android:textSize="30dp">
             </androidx.appcompat.widget.AppCompatButton>
@@ -389,125 +397,125 @@
         app:layout_constraintTop_toBottomOf="@+id/tab_month">
 
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 1" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 1" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 2" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 2" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 3" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 3" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 4" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 4" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 5" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 5" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day6"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day6"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 6" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 6" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/id_day7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/sidebtn"
-                android:fontFamily="@font/myfont"
-                android:textColor="@color/txtclr"
-                android:textSize="20sp"
-                android:text="DAY 7" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_day7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sidebtn"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/txtclr"
+            android:textSize="20sp"
+            android:text="DAY 7" />
 
-            <View
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
     </LinearLayout>
 
@@ -575,6 +583,5 @@
             android:textSize="20sp" />
 
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

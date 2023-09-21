@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Internship AR/CurriculumPlanner/adminapp/src/main/res/drawable-v24/aprbtn.xml" value="0.283984375" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/adminapp/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/adminapp/src/main/res/layout/activity_start.xml" value="0.1875" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/adminapp/src/main/res/layout/new_look.xml" value="0.264" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/adminapp/src/main/res/layout/save_dialog.xml" value="0.271875" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1890625" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/aprbtn.xml" value="0.283984375" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/drawable/augbtn.xml" value="0.283984375" />
@@ -37,11 +42,14 @@
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_34.xml" value="0.15548029556650247" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_45.xml" value="0.15548029556650247" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_56.xml" value="0.15548029556650247" />
-        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/activity_start.xml" value="0.176953125" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/content_layout.xml" value="0.4" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/popuplang_layout.xml" value="0.271875" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_day.xml" value="0.25769704433497537" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_side.xml" value="0.25769704433497537" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_top.xml" value="0.25769704433497537" />
+        <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/layout/tab_week.xml" value="0.271875" />
         <entry key="..\:/Internship AR/CurriculumPlanner/app/src/main/res/menu/langpopup.xml" value="0.271875" />
       </map>
     </option>
